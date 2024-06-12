@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang='de'>
 <head>
-  <meta charset='UTF-8'>
-  <title>Title</title>
+  <title>Question Display</title>
+  <meta http-equiv="refresh" content="15">
+  <script>
+      setTimeout(function() {
+          window.location.reload();
+      }, 15000);
+  </script>
 </head>
 <body>
-<header>
-  <nav>
-  </nav>
-</header>
-
-<main>
-  <article>
-    <section>
-    </section>
-    <section>
-    </section>
-  </article>
-</main>
-
-<footer>
-</footer>
-
+<h1>Question:</h1>
+<p id="question"></p>
+<form id="answerForm" action="/submit-answer" method="POST">
+  <label for="answer">Answer:</label><br>
+  <input type="text" id="answer" name="answer"><br>
+  <button type="submit">Submit</button>
+</form>
 </body>
 </html>
